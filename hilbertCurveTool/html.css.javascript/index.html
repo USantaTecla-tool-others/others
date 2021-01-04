@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hilbert Curve</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+ 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+ 		<link href="Style.css" rel="stylesheet">
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="box">
+			<form id="input-form" onsubmit='return false;'>
+				<div class="field is-grouped is-grouped-centered">
+				  <p class="control ">
+				    <label class="label">Order Number:</label>
+				  </p>
+				  <p class="control ">
+				    <input class="input" type="text" id="hilbert-order" placeholder="Type a number for Hilbert Curve order">
+				  </p>
+				  <p class="control">
+		      		<button class="button is-primary">Submit</button>
+				  </p>
+				</div> 
+		    </form>
+		</div>
+		<div class="columns">
+		  <div class="column">
+ 		    <div class="box">
+              <h3 id="let" class="title is-3">Hilbert curve</h3>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  A Hilbert curve (also known as a Hilbert space-filling curve) is a continuous fractal space-filling 
+                  curve first described by the German mathematician David Hilbert in 1891, as a variant of the space-filling
+                  Peano curves discovered by Giuseppe Peano in 1890.
+
+				  Because it is space-filling, its Hausdorff dimension is 2 (precisely, its image is the unit square, whose 
+				  dimension is 2 in any definition of dimension; its graph is a compact set homeomorphic to the closed unit 
+				  interval, with Hausdorff dimension 2).
+				  
+				  Both the true Hilbert curve and its discrete approximations are useful because they give a mapping between 
+				  1D and 2D space that preserves locality fairly well. This means that two data points which are close to 
+				  each other in one-dimensional space are also close to each other after folding. The converse can't always 
+				  be true.
+
+				  Because of this locality property, the Hilbert curve is widely used in computer science. For example, the 
+				  range of IP addresses used by computers can be mapped into a picture using the Hilbert curve. Code to 
+				  generate the image would map from 2D to 1D to find the color of each pixel, and the Hilbert curve is 
+				  sometimes used because it keeps nearby IP addresses close to each other in the picture.  
+                </div>
+              </article>
+              <div class="tags has-addons">
+               	<a class="tag is-link" href="https://en.wikipedia.org/wiki/Hilbert_curve#Applications_and_mapping_algorithms">More Info</a>
+              </div>
+            </div>
+          </div>
+		  <div class="column">
+			 <canvas id="board" width="400" height="400"></canvas>
+		  </div>
+		  <div class="column">
+		  	<div class="container is-fluid">
+				<h3 id="let" class="title is-3">Links:</h3>
+				<div class="buttons is-centered">
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=dkGJIIdQQI8">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=3s7h2MHQtxc">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+				</div>
+             </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Coordinate.js"></script>
+		<script type="text/javascript" src="Model/Model.js"></script>
+		<script type="text/javascript" src="View/MeshView.js"></script>
+		<script type="text/javascript" src="View/View.js"></script>
+		<script type="text/javascript" src="Controller/Controller.js"></script>
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
+
+
+
+
+

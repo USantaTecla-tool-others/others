@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sierpinski Arrowhead Triangles</title>
+		<link href="Style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+ 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="box">
+			<form id="input-form" onsubmit='return false;'>
+				<div class="field is-grouped is-grouped-centered">
+				  <p class="control ">
+				    <label class="label">Order Number:</label>
+				  </p>
+				  <p class="control ">
+				    <input class="input" type="text" id="sierpinski-order" placeholder="Type a number for Sierpinski Triangles order">
+				  </p>
+				  <p class="control">
+		      		<button class="button is-primary">Submit</button>
+				  </p>
+				</div> 
+		    </form>
+		</div>
+		<div class="columns">
+		  <div class="column">
+ 		    <div class="box">
+              <h3 id="let" class="title is-3">Sierpinski Arrowhead Triangles</h3>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  The Sierpinski triangle (also with the original orthography Sierpiński), also called the Sierpinski gasket 
+                  or Sierpinski sieve, is a fractal and attractive fixed set with the overall shape of an equilateral triangle, 
+                  subdivided recursively into smaller equilateral triangles. Originally constructed as a curve, this is one of 
+                  the basic examples of self-similar sets–that is, it is a mathematically generated pattern that is reproducible 
+                  at any magnification or reduction. It is named after the Polish mathematician Wacław Sierpiński, but appeared 
+                  as a decorative pattern many centuries before the work of Sierpiński.
+                  Another construction for the Sierpinski gasket shows that it can be constructed as a curve in the plane. It 
+                  is formed by a process of repeated modification of simpler curves, analogous to the construction of the Koch 
+                  snowflake:
+
+    				Start with a single line segment in the plane
+    				Repeatedly replace each line segment of the curve with three shorter segments, forming 120° angles at each 
+    				junction between two consecutive segments, with the first and last segments of the curve either parallel to 
+    				the original line segment or forming a 60° angle with it.
+
+					At every iteration, this construction gives a continuous curve. In the limit, these approach a curve that 
+					traces out the Sierpenski triangle by a single continuous directed (infinitely wiggly) path, which is called 
+					the Sierpinski arrowhead. In fact, the aim of the original article by Sierpinski of 1915, was to show an 
+					example of a curve (a Cantorian curve), as the title of the article itself declares.
+                </div>
+              </article>
+              <div class="tags has-addons">
+               	<a class="tag is-link" href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_curve#Arrowhead_curve">More Info</a>
+              </div>
+            </div>
+          </div>
+		  <div class="column">
+			 <canvas id="board" width="400" height="400"></canvas>
+		  </div>
+		  <div class="column">
+		  	<div class="container is-fluid">
+				<h3 id="let" class="title is-3">Links:</h3>
+				<div class="buttons is-centered">
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=SoMDLmUFj-o">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=j6WYSdHuWgY">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+				</div>
+             </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Coordinate.js"></script>
+		<script type="text/javascript" src="Model/Model.js"></script>
+		<script type="text/javascript" src="View/MeshView.js"></script>
+		<script type="text/javascript" src="View/View.js"></script>
+		<script type="text/javascript" src="Controller/Controller.js"></script>
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
+
+
+
+
+

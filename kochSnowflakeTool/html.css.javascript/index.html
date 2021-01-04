@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Koch Snowflake</title>
+		<link href="Style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+ 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="box">
+			<form id="input-form" onsubmit='return false;'>
+				<div class="field is-grouped is-grouped-centered">
+				  <p class="control ">
+				    <label class="label">Order Number:</label>
+				  </p>
+				  <p class="control ">
+				    <input class="input" type="text" id="snowflake-order" placeholder="Type a number for Koch Snowflake order">
+				  </p>
+				  <p class="control">
+		      		<button class="button is-primary">Submit</button>
+				  </p>
+				</div> 
+		    </form>
+		</div>
+		<div class="columns">
+		  <div class="column">
+ 		    <div class="box">
+              <h3 id="let" class="title is-3">Koch Snowflake</h3>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  The Koch snowflake (also known as the Koch curve, Koch star, or Koch island) is a mathematical curve and 
+                  one of the earliest fractals to have been described. It is based on the Koch curve, which appeared in a 
+                  1904 paper titled "On a Continuous Curve Without Tangents, Constructible from Elementary Geometry" by the 
+                  Swedish mathematician Helge von Koch.
+
+				  As the fractal evolves, the area of the snowflake converges to 8/5 the area of the original triangle, while 
+				  the perimeter of the snowflake diverges to infinity. Consequently, the snowflake has a finite area bounded by 
+				  an infinitely long line.   
+                </div>
+              </article>
+              <div class="tags has-addons">
+               	<a class="tag is-link" href="https://en.wikipedia.org/wiki/Koch_snowflake#Construction">More Info</a>
+              </div>
+            </div>
+          </div>
+		  <div class="column">
+			 <canvas id="board" width="500" height="400"></canvas>
+		  </div>
+		  <div class="column">
+		  	<div class="container is-fluid">
+				<h3 id="let" class="title is-3">Links:</h3>
+				<div class="buttons is-centered">
+					<a class="button is-primary" href="https://en.wikipedia.org/wiki/Koch_snowflake#/media/File:Von_Koch_curve.gif">
+					    <span class="icon">
+					      <i class="fab fa-wikipedia-w"></i>
+					    </span>
+					    <span>Wikipedia</span>
+					</a>
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=xlZHY0srIew">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=azBNsPa1WC4">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+				</div>
+             </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Coordinate.js"></script>
+		<script type="text/javascript" src="Model/Model.js"></script>
+		<script type="text/javascript" src="View/MeshView.js"></script>
+		<script type="text/javascript" src="View/View.js"></script>
+		<script type="text/javascript" src="Controller/Controller.js"></script>
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
+
+
+
+
+

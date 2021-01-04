@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Game Of Life</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+ 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="box">
+		</div>
+		<div class="columns">
+		  <div class="column">
+ 		    <div class="box">
+              <h3 id="let" class="title is-3">Game Of Life</h3>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician 
+                  John Horton Conway in 1970.
+
+				  The game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no 
+				  further input. One interacts with the Game of Life by creating an initial configuration and observing how it 
+				  evolves, or, for advanced players, by creating patterns with particular properties.  
+                </div>
+              </article>
+            </div>
+          </div>
+		  <div class="column">
+			 <canvas id="board" width="400" height="380"></canvas>
+		  </div>
+		  <div class="column">
+			  <div class="container is-fluid">
+				<h3 id="let" class="title is-3">Links:</h3>
+				<div class="buttons is-centered">
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=OWXD_wJxCKQ">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=E8kUJL04ELA">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+				</div>
+             </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Coordinate.js"></script>
+		<script type="text/javascript" src="Model/Model.js"></script>
+		<script type="text/javascript" src="View/MeshView.js"></script>
+		<script type="text/javascript" src="View/View.js"></script>
+		<script type="text/javascript" src="Controller/Controller.js"></script>
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
+
+
+
+
+

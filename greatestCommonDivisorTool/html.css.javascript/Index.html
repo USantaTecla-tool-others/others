@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Greatest common divisor visual calculation</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+ 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="box">
+			<form id="input-form" onsubmit='return false;'>
+				<div class="field is-grouped is-grouped-centered">
+				  <p class="control ">
+				    <label class="label">First Number:</label>
+				  </p>
+				  <p class="control ">
+				    <input class="input" type="text" id="first-number" placeholder="Type the first number">
+				  </p>
+				  <p class="control ">
+				    <label class="label">Second Number:</label>
+				  </p>
+				  <p class="control ">
+				    <input class="input" type="text" id="second-number" placeholder="Type the second number">
+				  </p>
+				  <p class="control">
+		      		<button class="button is-primary">Submit</button>
+				  </p>
+				</div> 
+		    </form>
+		</div>
+		<div class="columns">
+		  <div class="column">
+  		    <div class="box">
+              <h3 id="let" class="title is-3">Greatest common divisor</h3>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  In mathematics, the greatest common divisor (gcd) of two or more integers, which are not all zero, is 
+                  the largest positive integer that divides each of the integers. For example, the gcd of 8 and 12 is 4.
+
+				 The greatest common divisor is also known as the greatest common factor (gcf), highest common factor (hcf), 
+				 greatest common measure (gcm), or highest common divisor.
+				 
+				 An easy way of working out the HCF ( greatest common divisor - GCD) of 2 numbers by drawing squares in a 
+				 rectangle. A good introduction to Euclid's algorithm. gcd(a,b) value is the side of the biggest square that 
+				 can tile a rectangle with sides a & b. 
+                </div>
+              </article>
+            </div>
+          </div>
+		  <div class="column">
+			 <canvas id="board" width="400" height="400"></canvas>
+			 <div class="buttons is-centered">
+			  <button class="button is-primary" id="next_btn">Next</button>
+			 </div>
+		  </div>
+		  <div class="column">
+		  	<div class="container is-fluid">
+				<h3 id="let" class="title is-3">Links:</h3>
+				<div class="buttons is-centered">
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=IuyU9Ng75Xc">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+				</div>
+             </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Coordinate.js"></script>
+		<script type="text/javascript" src="Model/Model.js"></script>
+		<script type="text/javascript" src="Model/Rectangle.js"></script>
+		<script type="text/javascript" src="View/MeshView.js"></script>
+		<script type="text/javascript" src="View/View.js"></script>
+		<script type="text/javascript" src="Controller/Controller.js"></script>
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
+
+
+
+
+

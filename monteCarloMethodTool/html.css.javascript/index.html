@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Monte Carlo Pi Calculation</title>
+	<link href="Style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+ 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="columns">
+		  <div class="column">
+ 		    <div class="box">
+              <h3 id="let" class="title is-3">Monte Carlo</h3>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  Monte Carlo simulations define a method of computation that uses a large number of random samples 
+                  to obtain results. They are often used in physical and mathematical problems and are most useful 
+                  when it is difficult or impossible to use other mathematical methods. Monte Carlo methods are mainly 
+                  used in three distinct problem classes: optimization, numerical integration, and generating draws 
+                  from probability distributions.
+
+				  Monte Carlo simulations are often used when the problem at hand has a probabilistic component. 
+				  An expected value of that probabilistic component can be studied using Monte Carlo due to the law of
+				   large numbers. With enough data, even though it's sampled randomly, Monte Carlo can hone in on the 
+				   truth of the problem. For example, we can estimate the value of pi by simply throwing random needles 
+				   into a circle inscribed within a square that is drawn on the ground. After many needles are dropped, 
+				   one quadrant of the circle is then examined. The ratio of the number of needles that are inside the 
+				   square to the number of needles inside the circle is a very good approximation of pi. The more needles 
+				   that are dropped, the closer the approximation gets. 
+                </div>
+              </article>
+            </div>
+          </div>
+		  <div class="column">
+		  	<div class="box">
+		  		<h5 class="title is-5">Points drawn: <span id="total">0</span></h5>
+		  		<h5 class="title is-5">Points inside: <span id="inside">0</span></h5>
+		  		<h5 class="title is-5">Pi: <span id="pi">0</span></h5>
+			 </div>
+			 <svg width="400" height="400">
+		       <circle cx="200" cy="200" r="200" />
+		    </svg>
+		  </div>
+		  <div class="column">
+			  <div class="container is-fluid">
+				<h3 id="let" class="title is-3">Links:</h3>
+				<div class="buttons is-centered">
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=WJjDr67frtM">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+					<a class="button is-primary" href="https://www.youtube.com/watch?v=NMjWyyB3mpA">
+					    <span class="icon">
+					      <i class="fab fa-youtube"></i>
+					    </span>
+					    <span>Youtube</span>
+					</a>
+				</div>
+             </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Model.js "></script>
+		<script type="text/javascript" src="View/View.js "></script>
+		<script type="text/javascript" src="Controller/Controller.js "></script>
+		<script type="text/javascript" src="App.js "></script>
+	</body>
+</html>
+
+
+
+
+

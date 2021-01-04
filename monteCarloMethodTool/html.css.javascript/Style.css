@@ -1,0 +1,19 @@
+   svg {
+        float: left;
+      }
+      line {
+        stroke-width: 1;
+        stroke: black;
+      }
+      circle {
+        stroke: black;
+        stroke-width: 1;
+        fill: transparent;
+      }
+      rect {
+        stroke-width: 0;
+        fill: black;
+      }
+      rect.inside {
+        fill: red;
+      }

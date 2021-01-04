@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Text Moving</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+ 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="box">
+			<form id="input-form" onsubmit='return false;'>
+				<div class="field is-grouped is-grouped-centered">
+				  <p class="control ">
+				    <label class="label">Text:</label>
+				  </p>
+				  <p class="control ">
+				    <input class="input" type="text" id="input-text" placeholder="Introduce the text here">
+				  </p>
+				  <p class="control">
+		      		<button class="button is-primary">Submit</button>
+				  </p>
+				</div> 
+		    </form>
+		</div>
+		<div class="columns">
+		  <div class="column">
+
+          </div>
+		  <div class="column">
+			 <canvas id="the-board" width="400" height="400"></canvas>
+		  </div>
+		  <div class="column">
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Coordinate.js"></script>
+		<script type="text/javascript" src="Model/LetterDataBase.js"></script>
+		<script type="text/javascript" src="Model/Model.js"></script>
+		<script type="text/javascript" src="View/MeshView.js"></script>
+		<script type="text/javascript" src="View/View.js"></script>
+		<script type="text/javascript" src="Controller/Controller.js"></script>
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
+
+
+
+
+

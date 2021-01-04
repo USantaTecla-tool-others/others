@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Snake Game</title>
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+		 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<section class="hero is-primary">
+      		<div class="hero-body">
+				<div class="container">
+					<h1 class="title is-1">TFM MIW</h1>
+					<h2 class="subtitle">Mesh applications</h2>
+				</div>
+			</div>
+		</section>
+		<div class="columns">
+		  <div class="column">
+		  <div class="box">
+              <h4 id="let" class="title is-3">Snake Game</h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  Snake is the common name for a video game concept where the player maneuvers a line which grows in length, 
+                  with the line itself being a primary obstacle. The concept originated in the 1976 arcade game Blockade, and 
+                  the ease of implementing Snake has led to hundreds of versions (some of which have the word snake or worm in 
+                  the title) for many platforms. After a variant was preloaded on Nokia mobile phones in 1998, there was a 
+                  resurgence of interest in the snake concept as it found a larger audience. There are over 300 Snake-like 
+                  games for iOS alone.
+                </div>
+                
+              </article>
+              <div class="tags has-addons">
+               	<a class="tag is-link" href="https://en.wikipedia.org/wiki/Snake_(video_game_genre)">More Info</a>
+              </div>
+          </div>
+		  </div>
+		  <div class="column">
+		  	<div class="box">
+		  		<h4 class="title is-4">Score: <span id="score">0</span></h4>
+			 </div>
+			 <canvas id="the-board" width="400" height="400"></canvas>
+		  </div>
+		  <div class="column">
+		  	<article class="message is-primary">
+               <span class="icon has-text-primary">
+                 <i class="fas fa-info-circle"></i>
+               </span>
+               <div class="message-body">
+                 	<h5 class="title is-5">Tips:</h5>
+				<ul>
+				  <li>Use Arrow keys to change direcction</li>
+				  <li>Each time you hit the target you get an extra point</li>
+				  <li>If you hit the walls or the snake itself, the game is over</li>
+				</ul>
+               </div>
+             </article>
+		  </div>
+		</div>
+		<script type="text/javascript" src="Model/Coordinate.js"></script>
+		<script type="text/javascript" src="Model/Polyline.js"></script>
+		<script type="text/javascript" src="Model/Snake.js"></script>
+		<script type="text/javascript" src="Model/Matrix.js"></script>
+		<script type="text/javascript" src="Model/Stage.js"></script>
+		<script type="text/javascript" src="Model/Joystick.js"></script>
+		<script type="text/javascript" src="Model/Game.js"></script>
+		<script type="text/javascript" src="View/TargetView.js"></script>
+		<script type="text/javascript" src="View/SnakeView.js"></script>
+		<script type="text/javascript" src="View/MeshView.js"></script>
+		<script type="text/javascript" src="View/GameView.js"></script>
+		<script type="text/javascript" src="Controller/GameController.js"></script>
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
+
+
+
+
+
